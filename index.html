@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ABC FITNESS - Transform Your Life Today</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="swiper.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="overflow-x-hidden">
+  <header class="flex items-center justify-between !py-[0px] sm:w-[88%] w-[95%] !m-auto">
+    <div class="logo">
+      <a href="index.html">
+        <img class="sm:w-76 w-44" src="assets/logo.png" alt="Main Logo"></a>
+    </div>
+
+
+
+    <!-- Navbar Links -->
+    <div id="menu"
+      class="absolute top-16 left-0 w-full max-h-0 overflow-hidden lg:overflow-visible lg:max-h-fit lg:relative !bg-white lg:top-0  lg:w-auto lg:block transition-all duration-700 ease-in-out z-2">
+      <ul
+        class="flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 items-center !lg:items-center lg:justify-center 2xl:gap-18 sm:gap-10 gap-2">
+        <li><a class="text-[24px] font-[600] text-primary" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="text-[24px] font-[600]" href="classes.html">Classes</a></li>
+        <li><a class="text-[24px] font-[600]" href="gallery.html">Gallery</a></li>
+        <li><a class="text-[24px] font-[600]" href="about.html">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-button">
+      <button
+        class="sm:w-[160px] h-10 w-[120px] rounded-md bg-[#211F20] sm:text-[24px] text-[18px] text-white hover:bg-[#A81766] transition-all">Cart</button>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-gray-900">
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="sm:!py-16 !py-5 bg-cover flex flex-col items-center gap-7 relative w-screen z-1">
+      <div class="hero-content flex flex-col items-center justify-center gap-5 sm:w-[88%] w-[95%] m-auto">
+        <h1 class="text-center sm:text-[96px] text-[60px] font-bold text-black p-0 sm:leading-[90px] leading-[60px]">
+          Stronger. Fitter. You.</h1>
+        <p class="text-center sm:text-[23px] text-[18px] leading-[18px] sm:leading-[23px] p-0">
+          Build lasting connections with our coaches and members who share your vision. Use the app to crush goals,
+          celebrate wins, and stay on track.
+        </p>
+        <button
+          class="bg-primary text-white sm:w-[400px] w-[250px] h-[68px] sm:text-[30px] text-[20px] hover:!bg-black transition-all">
+          Reserve Your Spot
+        </button>
+      </div>
+
+      <!-- Swiper Slider (images only) -->
+      <div class="swiper myHeroSlider sm:w-full w-[95%]">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide flex justify-center items-center sm:h-[612px] h-[120px] w-full">
+            <div class="flex justify-center items-center w-full h-full">
+              <img class="object-contain sm:max-w-[1120px] max-h-full" src="assets/banner-image.png"
+                alt="Woman Kickboxing">
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide flex justify-center items-center sm:h-[612px] h-[120px] w-full">
+            <div class="flex justify-center items-center w-full h-full">
+              <img class="object-contain sm:max-w-[1120px] max-h-full" src="assets/banner-image.png"
+                alt="Woman Kickboxing">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <img class="absolute top-10 left-0 sm:w-[180px] w-[80px]" src="assets/dumble-1.png" alt="dumble">
+      <img class="absolute bottom-58 right-0 sm:w-[180px] w-[80px]" src="assets/dumble-2.png" alt="dumble">
+    </section>
+
+    <!-- classes Section -->
+    <section class="sm:!py-16 !py-5 bg-[#F4F0F0]">
+      <div class="sm:w-[88%] w-[95%] !m-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-center text-[50px] font-bold text-black">Our Classes</h2>
+          <p class="!text-center text-[20px] sm:w-[50%] font-bold leading-[28px]">Change your life and improve your
+            health
+            today with one of
+            our many different group fitness classes .All taught by are certified trainers.</p>
+        </div>
+        <div class="class-cards flex flex-col sm:flex-row sm:gap-3 gap-5 !mt-5 justify-center">
+          <a href="classes.html" class="class-card">
+            <div class="relative">
+              <div class="class-image">
+                <img src="assets/class-1.png" alt="Yoga and Meditation Class">
+              </div>
+              <div class="absolute bottom-0 left-0 flex justify-center items-center bg-primary w-[196px] h-[60px]">
+                <h3 class="text-[24px] text-white">yoga</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <h4 class="text-[24px] font-bold">Learn</h4><i class="fas fa-chevron-down"></i>
+            </div>
+          </a>
+
+          <a href="classes.html" class="class-card">
+            <div class="relative">
+              <div class="class-image">
+                <img src="assets/class-2.png" alt="Yoga and Meditation Class">
+              </div>
+              <div class="absolute bottom-0 left-0 flex justify-center items-center bg-primary w-[196px] h-[60px]">
+                <h3 class="text-[24px] text-white">pilates</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <h4 class="text-[24px] font-bold">Learn</h4><i class="fas fa-chevron-down"></i>
+            </div>
+          </a>
+
+          <a href="classes.html" class="class-card">
+            <div class="relative">
+              <div class="class-image">
+                <img src="assets/class-3.png" alt="Yoga and Meditation Class">
+              </div>
+              <div class="absolute bottom-0 left-0 flex justify-center items-center bg-primary w-[196px] h-[60px]">
+                <h3 class="text-[24px] text-white">kickboxing</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <h4 class="text-[24px] font-bold">Learn</h4><i class="fas fa-chevron-down"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Community Section -->
+    <section class="community grid grid-cols-2 items-center gap-8 w-[95%] sm:w-[100%] !py-10 sm:!py-0 !m-auto">
+      <div class="community-content sm:!pl-[125px] pl-0 sm:!pr-[80px] flex flex-col gap-5">
+        <h2 class="2xl:text-[67px] sm:text-[50px] text-[42px] text-center sm:text-left font-bold leading-none text-black">Be Part
+          Of Something Bigger</h2>
+        <p class="sm:text-[40px] text-[28px] mt-6 sm:leading-[46px] leading-[28px] text-center sm:text-left font-[500] text-black">
+          Connect with our trainers and other fitness members who
+          have like-minded goals. Use
+          our mobile app to track
+          progress and much more.</p>
+        <button
+          class="sm:w-[334px] w-[250px] sm:h-[84px] h-[60px] bg-primary text-white hover:!bg-black transition-all !m-auto sm:!m-0 sm:text-[36px] text-[20px] rounded-lg sm:!mt-10">Learn
+          More</button>
+      </div>
+      <div class="community-image">
+        <img src="assets/home-community.png" alt="Fitness Community" class="w-full h-auto object-cover">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-[#211F20]">
+    <div class="footer-content flex flex-col sm:flex-row justify-between sm:!py-16 !py-10 sm:w-[88%] w-[95%] !m-auto">
+      <div class="footer-section sm:w-[75%] w-full flex flex-col justify-center sm:block">
+        <img class="!w-[450px]" src="assets/footer-logo.png" alt="footer-logo">
+        <button
+          class="sm:w-[334px] w-[250px] sm:h-[84px] h-[60px] bg-primary text-white hover:!bg-black transition-all sm:text-[36px] text-[28px] !mx-auto sm:!m-0 rounded-lg">Join
+          Us</button>
+        <h2
+          class="sm:text-[36px] text-[30px] leading-[30px] sm:leading-[36px] sm:text-left text-center text-white !mt-2">
+          Start Your Fitness Journey with Confidence</h2>
+        <p class="sm:w-[79%] !text-white sm:text-left text-center sm:text-[24px] text-[20px] leading-[22px] sm:leading-[24px] !mt-4">Step into a
+          healthier lifestyle at ABC Fitness Studio. Whether
+          you’re
+          just
+          getting started or leveling up
+          your
+          training, our expert instructors and welcoming community are here to guide you. With a variety of classes,
+          ranging from beginner to advanced, you’ll find the perfect mix of strength, flexibility, and mindfulness.
+          Let’s move forward together.</p>
+      </div>
+      <div class="footer-section sm:w-[15%] w-fit sm:!pt-10 !pt-8 !m-auto sm:!m-0">
+        <h3 class="text-white underline text-[30px] sm:text-left text-center font-bold">classes</h3>
+        <div class="footer-links">
+          <a class="text-white text-[24px] sm:text-left text-center" href="#">Membership</a>
+        </div>
+      </div>
+      <div class="footer-section sm:w-[10%] w-full flex flex-col items-center sm:items-end sm:!pt-10 !pt-8">
+        <h3 class="text-white underline text-[30px] sm:text-left text-center font-bold">schedule</h3>
+        <div class="footer-links w-[110px] flex justify-center sm:block">
+          <a class="text-white text-[24px] sm:text-center" href="#">contact</a>
+        </div>
+      </div>
+
+      <!-- <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="assets/facebook_logo.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/instagram_logo.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="assets/youtube_logo.png" alt="YouTube" class="social-icon">
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <div class="footer-bottom sm:!py-10 !py-5 w-[88%] !m-auto">
+      <p class="text-white text-[24px] text-center sm:text-left">&copy;2025 &nbsp; &nbsp; &nbsp;Privacy — Terms</p>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
